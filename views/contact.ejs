@@ -1,0 +1,51 @@
+
+    <!-- mainbody -->
+      <h1>Welcome in Contact</h1>
+    <p>Hello Everybody</p>
+    <h1>Contact List : </h1>
+    <!-- Membuat tabel menggunakan bootstrap -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <% if (contacts.length < 1 ) { %>
+            <p>Contact Data empty</p>
+           <% } else {%>
+            <!-- Membuat nomor angka variable let i -->
+            <% let i = 1; %> 
+          <% contacts.forEach((contact) => { %>
+            <tr>
+            <!-- Memanggil dan nomor -->
+            <th><%= i++ %> </th>
+            <td><%= contact.name %> </td>
+            <td><%= contact.email %> </td>
+          </tr>
+          <% }) %>
+          <% } %>
+        </tr>
+        <tr>
+         
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- <ul>
+     
+      <% if (contacts.length < 1 ) { %>
+       <p>Contact Data empty</p>
+      <% } else {%>
+      <% contacts.forEach(contact => { %>
+        <li> Name : <%= contact.name %> </li>
+        <li>Email : <%= contact.email %> </li>
+        <br />
+      <% }) %>
+      <% } %>
+
+    </ul> -->
+ 

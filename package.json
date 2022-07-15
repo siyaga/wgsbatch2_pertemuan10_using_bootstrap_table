@@ -1,0 +1,17 @@
+{
+  "name": "wgsbatch2_pertemuan10_using_bootstrap_table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "adi riyanto",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "morgan": "^1.10.0"
+  }
+}
